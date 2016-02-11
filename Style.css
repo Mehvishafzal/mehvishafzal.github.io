@@ -1,7 +1,6 @@
 .body {
-      Backgroud-image: url (http://www.lisasonora.com/wp-content/uploads/2012/04/painted_background.jpg);
+      backgroud-image: url (http://www.lisasonora.com/wp-content/uploads/2012/04/painted_background.jpg);
 }
-div; hover {
-      transform: rotate(10deg);
-      -webkit-transform: rotate (10deg)
+.p {
+      background-colour: lightgrey;
 }
