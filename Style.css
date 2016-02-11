@@ -1,11 +1,5 @@
 .body {
       Backgroud-image: url (http://www.lisasonora.com/wp-content/uploads/2012/04/painted_background.jpg);
-      Width: 100px; 
-      height: 100px; 
-      background-color: lightgrey; 
-      position: center; 
-      top: 50%; 
-      left: 50%;
 }
 div; hover {
       transform: rotate(10deg);
