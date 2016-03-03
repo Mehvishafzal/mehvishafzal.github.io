@@ -1,16 +1,24 @@
 <html>
   <head>
     <style>
+.top {
+    position:absolute;
+    left:0; right:0;
+    height: 92px;
+}
+.left {
+    position:absolute;
+    left:0; top:92px; bottom: 0;
+    width: 178px;
+}
  body {
     background-image: url("https://s3.amazonaws.com/weddingshoot/1-WALLPAPER.jpg");
     background-size: 100%;
-    margin-top: 85px;
-    margin-right: 40px;
-    margin-bottom: 10px;
-    margin-left: 70px;
- }
- p{
-   margin: 5px 50px 5px 50px;
+    position:absolute;
+    margin-top: 92px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 178px;
  }
  h1 {
      background: brown;
@@ -62,7 +70,14 @@ img {
 </div>
 
    <p> 
-   <h3 class="date"> 
+   <div class="top">
+    TOP
+</div>
+<div class="left">
+    LEFT
+</div>
+<div class="main">
+  <h3 class="date"> 
         <em> 01/26/2016 </em>
         
    <h3 class="date"> 
@@ -77,6 +92,8 @@ img {
    <h3 class="date"> 
         <em> 02/25/2016 </em>
    
+    MAIN
+</div>
    </p>
    </body>
   </html>
