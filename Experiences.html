@@ -4,15 +4,23 @@
  body {
     background-image: url("https://s3.amazonaws.com/weddingshoot/1-WALLPAPER.jpg");
     background-size: 100%;
-    margin-top: 92px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 178px;
+ }
+ .container {
+   position:relative;
+   padding:0 0 0 55px;
+ }
+ # sidebar {
+   position:absolute;
+    top:0; bottom:0; left:0;
+    width:50px;
+    background:#000;
  }
  h1 {
      background: brown;
      color: #D0D0D0;
-     padding: 20px 20px 20px 80px;
+     width:100px;
+     height:20px;
+     margin: 0 0 5px 0;
  }
  ul {
     list-style-type: none;
@@ -36,6 +44,13 @@
 #firstlist li a {
 color: #D0D0D0;
   }
+  
+#footer {
+  border:1px solid #000; 
+  width:100px; 
+  height:20px;
+  margin:5px 0 0 0;
+}
 .date {
   color:brown;}
 
@@ -43,32 +58,40 @@ color: #D0D0D0;
 </head>
 
 <body>
-  <h1>Experiences</h1>
-   <hr />
-<div id="nav">
-<ul id = "firstlist">
-  <li><a href="https://mehvishafzal.github.io/index.html">Home</a></li>
-  <li><a href="http://mehvishafzal.github.io/Experiences.html">Experiences</a></li>
-  <li><a href="http://mehvishafzal.github.io/Assignments.html">DGMD Class Assignments</a></li>
-</ul> 
-</div>
+  <div class="container">
+    <div id="sidebar">
+    </div>
+    <div id="header">
+      <h1>Experiences</h1>
+      <hr />
+    </div>
+    <div id="nav">
+     <ul id = "firstlist">
+      <li><a href="https://mehvishafzal.github.io/index.html">Home</a></li>
+      <li><a href="http://mehvishafzal.github.io/Experiences.html">Experiences</a></li>
+      <li><a href="http://mehvishafzal.github.io/Assignments.html">DGMD Class Assignments</a></li>
+     </ul> 
+     <div id="content">
+       
+     </div>
+  </div>
 
-<div id="content">
-  <h3 class="date"> 
+  <div id="content">
+    <h3 class="date"> 
         <em> 01/26/2016 </em>
         
-   <h3 class="date"> 
+    <h3 class="date"> 
         <em> 02/04/2016 </em>
   
-   <h3 class="date"> 
+    <h3 class="date"> 
         <em> 02/11/2016 </em>
         
-   <h3 class="date"> 
+    <h3 class="date"> 
         <em> 02/18/2016 </em>
         
-   <h3 class="date"> 
+    <h3 class="date"> 
         <em> 02/25/2016 </em>
-</div>
+ </div>
    
 <div id="footer">
 </div>
