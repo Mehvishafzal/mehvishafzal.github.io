@@ -8,16 +8,20 @@
     margin-right: 40px;
     margin-bottom: 10px;
     margin-left: 70px;
+    z-index: -10; 
  }
  .content {
     position: relative;
     font-size: 14px;
     color: #D0D0D0;
     display: inline-block;
-    width: 1000;
+    width: 800px;
     line-height: 1.25em;
-    margin: auto
-    text-align: justify;
+    margin: right;
+    left:20%;
+    /*opacity: 0.5;
+    background-color: white;*/
+    
 
  }
  .content:first-letter {
@@ -56,12 +60,14 @@
 }
 .sidebar {
   position: fixed;
-  height: 300px
+  height: 300px;
   width: 150px;
+  opacity: 0.5;
   background-color: #DDD; 
+  z-index: 2;
 }
  .date {
-  color: black;
+  color: black
   margin-left: 206px;
   box-sizing: border-box;
   width: 100%;
@@ -73,6 +79,9 @@
       <h1>Experiences</h1>
       <hr />
     <div id="nav">
+
+ <div class="sidebar"></div>
+
      <ul id = "firstlist">
       <li><a href="https://mehvishafzal.github.io/index.html">Home</a></li>
       <li><a href="http://mehvishafzal.github.io/Experiences.html">Experiences</a></li>
@@ -104,9 +113,7 @@
       amazed at the idea of me being so excited about this new perspective I got that night.<br>
     </div>
     
-    <div id="sidebar">Cow<br>
-      
-    </div>
+   
         
     <h3 class="date"> 
         <em> 02/04/2016 </em>
