@@ -39,9 +39,18 @@ color: #D0D0D0;
    height:250px;
    border:grey;
    opacity:0.6;
- } 
+   -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+/* Chrome, Safari, Opera */
+  @-webkit-keyframes mymove {
+    50% {border: 15px solid lightblue;}
+}
+/* Standard syntax */
+ @keyframes mymove {
+    50% {border: 15px solid lightblue;}
  .moodboard p{
-    margin-top: 2cm;
+    margin: 5%;
     text-decoration: underline;
     text-transform: capitalize;
     font-size:200%
