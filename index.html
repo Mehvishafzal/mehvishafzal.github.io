@@ -32,55 +32,48 @@
 #firstlist li a {
   color: #D0D0D0;
  }
-#widgets{
-  width: 485px;
+#moodboard{
+  width: 350px;
+  height:250;
   background: brown;
+  float: left;
   -webkit-transition: width 2s, height 4s; 
   transition: width 2s, height 4s;
  }
-  #widgets:hover {
+  #moodboard:hover {
   width: 500px;
   height: 500px;
   opacity: 0.6%;
  }
- #widgets p{
+ #moodboard p{
     margin-top: 5%;
     text-decoration: underline;
     text-transform: capitalize;
     color: #D0D0D0;
     font-size:200%
     font-weight: bold;
-
- .moodboard {
-  width:240px
-  height: 250px;
-  float:left;
+    
  }
- .weather {
-  width:240px
+#weather{
+  width: 300px;
   height: 250px;
   float:right;
+  background: brown;
+  -webkit-transition: width 2s, height 4s; 
+  transition: width 2s, height 4s;
  }
-/*#weather{*/
-/*  width: 300px;*/
-/*  height: 250px;*/
-/*  float:center;*/
-/*  background: brown;*/
-/*  -webkit-transition: width 2s, height 4s; */
-/*  transition: width 2s, height 4s;*/
-/* }*/
-/* #weather:hover {*/
-/*  width: 500px;*/
-/*  height: 500px;*/
-/*  opacity: 0.6%;*/
-/* }*/
-/* #weather p{*/
-/*    margin-top: 5%;*/
-/*    text-decoration: underline;*/
-/*    text-transform: capitalize;*/
-/*    color: #D0D0D0;*/
-/*    font-size:200%*/
-/*    font-weight: bold;*/
+ #weather:hover {
+  width: 500px;
+  height: 500px;
+  opacity: 0.6%;
+ }
+ #weather p{
+    margin-top: 5%;
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: #D0D0D0;
+    font-size:200%
+    font-weight: bold;
 </style
 </head>
 
@@ -96,11 +89,11 @@
 </ul> 
 </div>
 
-<div id="widgets">
-    <div class="moodboard">
+<div id="moodboard">
     <p>Pick how you feel today</p>
-    </div>
-    <div class="weather">
+</div>
+
+<div id="weather">
     <p>How is the Weather Today?</p>
 </div>
    </body>
