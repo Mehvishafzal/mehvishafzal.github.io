@@ -1,4 +1,4 @@
-<html>
+<html id="page">
 <head>
     <link rel="stylesheet" href="Style.css" type="text/css">  
 </head>
@@ -32,12 +32,6 @@
         </div>
 </div>
 
-    // <script>
-    // var page = document.getElementsById('page');
-    // var button =document.getElementsById("button");
-
-    // <script/>
-
 <div id="weather">
     <p>How is the Weather Today?</p>
     <div id="button5">
@@ -54,18 +48,18 @@
         </div>
 </div>
     <script>
-        
-//         // var changeimage1 = document.getElementById('button1');
-//         // changeimage1.body.style.backgroundColor = "red"
-//         // changeimage1.body.addEventListner("click", function(){
-//         // document.getElementById('button1') = "happy3.png";
-// };
+       
+    var page = document.getElementById('page');
+    var button1 = document.getElementById("button1");
 
-function change (){
-            alert('hi');
-            alert('hi there');
-        }
-        go();
+
+    button1.addEventListener("click", function changeBackgroundColor() {
+        page.style.backgroundImage = "url(Happy1.jpg)";
+        page.style.backgroundSize = "contain";
+        // page.style.backgroundRepeat = "repeat";
+        localStorage.setItem("backgroundImage", "Happy1.jpg");
+
+    });
     </script>
    </body>
 
