@@ -1,8 +1,6 @@
-function changeImage(){
 var retain = document.getElementById('button1');
-if (image.scr.match('button1')) {
-  img.src ="happy3.png";
-} else {
-  img.src ="";
-}
-}
+retain.style.backgroundColor = "red"
+retain.addEventListner("click", function (){
+  document.getElementById('button1') = "happy3.png";
+};
+
