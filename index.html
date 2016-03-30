@@ -1,50 +1,58 @@
 <html id="page">
 <head>
-    <link rel="stylesheet" href="Style.css" type="text/css">  
+    <link rel="stylesheet" href="Style1.css" type="text/css">  
 </head>
 
-<body id = 'body'>
+<body>
 
    <h1>Mehvish`s Coding Journal</h1> 
    <hr />
 
 <div id="nav">
 <ul id = "firstlist">
-  <li><a href="https://mehvishafzal.github.io/index.html">Home</a></li>
-  <li><a href="http://mehvishafzal.github.io/Experiences.html">Experiences</a></li>
-  <li><a href="http://mehvishafzal.github.io/Assignments.html">DGMD Class Assignments</a></li>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="Experiences.html">Experiences</a></li>
+  <li><a href="Assignments.html">DGMD Class Assignments</a></li>
 </ul> 
 </div>
 
 <div id="moodboard">
     <p>Pick how you feel today</p>
-    <div id="button1">
-       <p>Happy</p>
+    <div class="button" 
+     id="button1">
+       <p class = "emotion">Happy</p>
        </div>
-    <div id="button2">
-        <p>Calm</p>
+    <div class="button"
+    id="button2">
+        <p class = "emotion">Calm</p>
         </div>
-    <div id="button3"> 
-        <p>Sad</p>
+    <div class="button"
+    id="button3"> 
+        <p class = "emotion">Sad</p>
         </div>
-    <div id="button4">
-        <p>Not Sure</p>
+    <div class="button"
+    id="button4">
+        <p class = "emotion">Not Sure</p>
         </div>
 </div>
 
 <div id="weather">
     <p>How is the Weather Today?</p>
-    <div id="button5">
-       <p>Sunny</p>
+    <div class="button"
+    id="button5">
+       <p class = "emotion">Sunny</p>
        </div>
-    <div id="button6">
-        <p>Cloudy</p>
+    <div class="button"
+    id="button6">
+        <p class = "emotion">Cloudy</p>
         </div>
-    <div id="button7"> 
-        <p>Rainy</p>
+    <div class="button"
+    id="button7"> 
+        <p class = "emotion">Rainy</p>
         </div>
-    <div id="button8">
-        <p>Thunder</p>
+    <div class="button"
+    id="button8">
+        <p class = "emotion">Thunder</p>
         </div>
 </div>
     <script>
@@ -60,6 +68,19 @@
         localStorage.setItem("backgroundImage", "Happy1.jpg");
 
     });
+
+  
+    var button2 = document.getElementById("button2");
+
+
+    button2.addEventListener("click", function changeBackgroundColor() {
+        page.style.backgroundImage = "url(Happy2.png)";
+        page.style.backgroundSize = "contain";
+        // page.style.backgroundRepeat = "repeat";
+        localStorage.setItem("backgroundImage", "Happy2.png");
+
+    });
+
     </script>
    </body>
 

@@ -1,4 +1,4 @@
-body { 
+html { 
        background-image: url("https://s3.amazonaws.com/weddingshoot/6-WALLPAPER.jpg"); 
        background-size: 100%; 
      } 
@@ -52,54 +52,63 @@ ul   {
         font-size:1.5em; 
         font-weight: bold; 
         } 
-        #button1{ 
+        .button {
             display:inline-block; 
             border: 3px solid #330033; 
             width:90px; 
             height:90px; 
             border-radius:25px; 
-            /*opacity:0.6%; */
-            background-image: url(https://s3.amazonaws.com/weddingshoot/Happy3.jpg); 
             background-size: cover; 
             margin-left:15px; 
+            position: relative;
+            top: 10%;
            -webkit-transition: width 2s, height 2s;  
             transition: width 2s, height 2s; 
+        }
+        .button:hover {
+            width: 120px; 
+            height: 120px; 
+        }
+
+        #button1{ 
+            /*opacity:0.6%; */
+            background-image: url(https://s3.amazonaws.com/weddingshoot/Happy3.jpg); 
+            
         } 
-        #button1:hover { 
-            width: 200px; 
-            height: 200px; 
-            /*opacity: 0.6%; */
-        } 
-        #button1 p { 
-            font-size:1.3em;  
-            margin-top: 100%; 
-            margin-left: 5%; 
+        
+        .emotion { 
+            font-size:12px; 
+            position: relative;
+            top: 100%; 
+            margin-left: 0%; 
             text-align:center; 
         } 
         #button2{ 
-            display:inline-block; 
+          /*  display:inline-block; 
             border: 3px solid #330033; 
            width:90px; 
              height:90px; 
-            border-radius:25px; 
+            border-radius:25px; */
             /*opacity:0.6%; */
             background-image: url(https://s3.amazonaws.com/weddingshoot/Calm2.jpg); 
-            background-size: cover; 
+            /*background-size: cover; 
             margin:15px; 
             -webkit-transition: width 2s, height 2s;  
-            transition: width 2s, height 2s; 
+            transition: width 2s, height 2s; */
        } 
         #button2:hover { 
-            width: 200px; 
-            height: 200px; 
+            width: 120px; 
+            height: 120px; 
            /* opacity: 0.6%; */
         } 
-        #button2 p{ 
+       /* #button2 p{ 
             font-size:1.3em;  
              margin-top: 100%; 
              margin-left: 5%; 
-             text-align:center; 
-        } 
+             text-align:center; */
+/*        }*/ 
+
+
         #button3{ 
             display:inline-block; 
             border: 3px solid #330033; 
@@ -114,8 +123,8 @@ ul   {
             transition: width 2s, height 2s; 
        } 
         #button3:hover { 
-             width: 200px; 
-             height: 200px; 
+             width: 120px; 
+             height: 120px; 
              /*opacity: 0.6%;*/ 
         } 
        #button3 p{ 
@@ -138,8 +147,8 @@ ul   {
              transition: width 2s, height 2s; 
       } 
        #button4:hover { 
-             width: 200px; 
-             height: 200px; 
+             width: 120px; 
+             height: 120px; 
              /*opacity: 0.6%; */
       } 
        #button4 p{ 
@@ -184,8 +193,8 @@ ul   {
              transition: width 2s, height 2s; 
          } 
          #button5:hover { 
-             width: 200px; 
-             height: 200px; 
+             width: 120px; 
+             height: 120px; 
              /*opacity: 0.6%;*/ 
          } 
          #button5 p { 
@@ -208,8 +217,8 @@ ul   {
             transition: width 2s, height 2s; 
          } 
          #button6:hover { 
-             width: 200px; 
-             height: 200px; 
+             width: 120px; 
+             height: 120px; 
              /*opacity: 0.6%; */
          } 
          #button6 p{ 
@@ -232,8 +241,8 @@ ul   {
             transition: width 2s, height 2s; 
         } 
        #button7:hover { 
-              width: 200px; 
-              height: 200px; 
+              width: 120px; 
+              height: 120px; 
               /*opacity: 0.6%; */
         } 
         #button7 p{ 
@@ -256,8 +265,8 @@ ul   {
              transition: width 2s, height 2s; 
       } 
        #button8:hover { 
-             width: 200px; 
-             height: 200px; 
+             width: 120px; 
+             height: 120px; 
              /*opacity: 0.6%; */
        } 
        #button8 p{ 
