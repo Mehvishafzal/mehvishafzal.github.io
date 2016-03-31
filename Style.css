@@ -72,8 +72,8 @@ ul   {
         }
         .button p {
             font-size:1.3em;  
+            top:10px
             left:5%; 
-            text-align:center;
             padding:10px;
         }
         #button1 { 
