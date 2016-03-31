@@ -71,8 +71,8 @@ ul   {
         }
         .button p {
             font-size:1.3em;  
-            margin-top: 100%; 
-            margin-left: 5%; 
+            margin-top:100%; 
+            margin-left:5%; 
             text-align:center; 
         }
         #button1 { 
@@ -96,7 +96,7 @@ ul   {
             width: 550px; 
             height:250; 
             background: brown; 
-            opacity: 0.6; 
+            opacity:0.6; 
             float: left; 
             border: 3px solid #330033; 
        } 
