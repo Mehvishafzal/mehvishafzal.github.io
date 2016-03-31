@@ -70,12 +70,12 @@ ul   {
             width: 120px; 
             height: 120px; 
         }
-        .button p {
-            font-size:1.3em;  
-            top:10px
-            left:5%; 
-            padding:10px;
-        }
+        /*.button p {*/
+        /*    font-size:1.3em;  */
+        /*    top:10px*/
+        /*    left:5%; */
+        /*    padding:10px;*/
+        /*}*/
         #button1 { 
             background-image: url(https://s3.amazonaws.com/weddingshoot/Happy3.jpg); 
         } 
