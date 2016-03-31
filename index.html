@@ -1,62 +1,50 @@
 <html id="page">
+
 <head>
-    <link rel="stylesheet" href="Style.css" type="text/css">  
+    <link rel="stylesheet" href="Style.css" type="text/css">
 </head>
 
 <body>
-
-   <h1>Mehvish`s Coding Journal</h1> 
-   <hr />
-
-<div id="nav">
-<ul id = "firstlist">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="Experiences.html">Experiences</a></li>
-  <li><a href="Assignments.html">DGMD Class Assignments</a></li>
-</ul> 
-</div>
-
-<div id="moodboard">
-    <p>Pick how you feel today</p>
-    <div class="button" 
-     id="button1">
-       <p class = "emotion">Happy</p>
-       </div>
-    <div class="button"
-    id="button2">
-        <p class = "emotion">Calm</p>
+    <h1>Mehvish`s Coding Journal</h1>
+    <hr />
+    <div id="nav">
+        <ul id="firstlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Experiences.html">Experiences</a></li>
+            <li><a href="Assignments.html">DGMD Class Assignments</a></li>
+        </ul>
+    </div>
+    <div id="moodboard">
+        <p>Pick how you feel today</p>
+        <div class="button" id="button1">
+            <p class="emotion">Happy</p>
         </div>
-    <div class="button"
-    id="button3"> 
-        <p class = "emotion">Sad</p>
+        <div class="button" id="button2">
+            <p class="emotion">Calm</p>
         </div>
-    <div class="button"
-    id="button4">
-        <p class = "emotion">Not Sure</p>
+        <div class="button" id="button3">
+            <p class="emotion">Sad</p>
         </div>
-</div>
-
-<div id="weather">
-    <p>How is the Weather Today?</p>
-    <div class="button"
-    id="button5">
-       <p class = "emotion">Sunny</p>
-       </div>
-    <div class="button"
-    id="button6">
-        <p class = "emotion">Cloudy</p>
+        <div class="button" id="button4">
+            <p class="emotion">Not Sure</p>
         </div>
-    <div class="button"
-    id="button7"> 
-        <p class = "emotion">Rainy</p>
+    </div>
+    <div id="weather">
+        <p>How is the Weather Today?</p>
+        <div class="button" id="button5">
+            <p class="emotion">Sunny</p>
         </div>
-    <div class="button"
-    id="button8">
-        <p class = "emotion">Thunder</p>
+        <div class="button" id="button6">
+            <p class="emotion">Cloudy</p>
         </div>
-</div>
+        <div class="button" id="button7">
+            <p class="emotion">Rainy</p>
+        </div>
+        <div class="button" id="button8">
+            <p class="emotion">Thunder</p>
+        </div>
+    </div>
     <script>
-       
     var page = document.getElementById('page');
     var button1 = document.getElementById("button1");
 
@@ -64,36 +52,80 @@
     button1.addEventListener("click", function changeBackgroundColor() {
         page.style.backgroundImage = "url(Happy1.jpg)";
         page.style.backgroundSize = "contain";
-        // page.style.backgroundRepeat = "repeat";
         localStorage.setItem("backgroundImage", "Happy1.jpg");
 
     });
 
-  
     var button2 = document.getElementById("button2");
 
 
     button2.addEventListener("click", function changeBackgroundColor() {
         page.style.backgroundImage = "url(Happy2.png)";
         page.style.backgroundSize = "contain";
-        // page.style.backgroundRepeat = "repeat";
         localStorage.setItem("backgroundImage", "Happy2.png");
 
     });
-    
+
     var button3 = document.getElementById("button3");
 
 
-    button2.addEventListener("click", function changeBackgroundColor() {
-        page.style.backgroundImage = "url(Happy3.png)";
+    button3.addEventListener("click", function changeBackgroundColor() {
+        page.style.backgroundImage = "url(Happy3.jpg)";
         page.style.backgroundSize = "contain";
-        // page.style.backgroundRepeat = "repeat";
         localStorage.setItem("backgroundImage", "Happy3.jpg");
 
     });
 
+    var button4 = document.getElementById("button4");
+
+
+    button4.addEventListener("click", function changeBackgroundColor() {
+        page.style.backgroundImage = "url(Happy4.jpg)";
+        page.style.backgroundSize = "contain";
+        localStorage.setItem("backgroundImage", "Happy4.jpg");
+
+    });
+
+    var button5 = document.getElementById("button5");
+
+
+    button5.addEventListener("click", function changeBackgroundColor() {
+        page.style.backgroundImage = "url(Happy5.jpg)";
+        page.style.backgroundSize = "contain";
+        localStorage.setItem("backgroundImage", "Happy5.jpg");
+
+    });
+
+    var button6 = document.getElementById("button6");
+
+
+    button6.addEventListener("click", function changeBackgroundColor() {
+        page.style.backgroundImage = "url(Happy6.jpg)";
+        page.style.backgroundSize = "contain";
+        localStorage.setItem("backgroundImage", "Happy6.jpg");
+
+    });
+
+    var button7 = document.getElementById("button3");
+
+
+    button7.addEventListener("click", function changeBackgroundColor() {
+        page.style.backgroundImage = "url(Happy7.jpg)";
+        page.style.backgroundSize = "contain";
+        localStorage.setItem("backgroundImage", "Happy7.jpg");
+
+    });
+
+    var button8 = document.getElementById("button3");
+
+
+    button8.addEventListener("click", function changeBackgroundColor() {
+        page.style.backgroundImage = "url(Happy8.jpg)";
+        page.style.backgroundSize = "contain";
+        localStorage.setItem("backgroundImage", "Happy8.jpg");
+
+    });
     </script>
-   </body>
+</body>
 
-  </html>
-
+</html>
