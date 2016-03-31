@@ -69,12 +69,12 @@ ul   {
             width: 120px; 
             height: 120px; 
         }
-        .button p {
-            font-size:1.3em;  
-            margin-top:100%; 
-            margin-left:5%; 
-            text-align:center; 
-        }
+        /*.button p {*/
+        /*    font-size:1.3em;  */
+        /*    margin-top:100%; */
+        /*    margin-left:5%; */
+        /*    text-align:center; */
+        /*}*/
         #button1 { 
             background-image: url(https://s3.amazonaws.com/weddingshoot/Happy3.jpg); 
         } 
