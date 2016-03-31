@@ -69,33 +69,25 @@ ul   {
             width: 120px; 
             height: 120px; 
         }
-        #button1{ 
+        .button p {
+            font-size:1.3em;  
+            margin-top: 100%; 
+            margin-left: 5%; 
+            text-align:center; 
+        }
+        #button1 { 
             background-image: url(https://s3.amazonaws.com/weddingshoot/Happy3.jpg); 
         } 
-        
-        /*.emotion { */
-        /*    font-size:12px; */
-        /*    position: relative;*/
-        /*    top: 100%; */
-        /*    margin-left: 0%; */
-        /*    text-align:center; */
-        } 
-        #button2{ 
+        #button2 { 
             background-image: url(https://s3.amazonaws.com/weddingshoot/Calm2.jpg); 
        } 
-        #button3{ 
+        #button3 { 
             background-image: url(https://s3.amazonaws.com/weddingshoot/Sad4.jpg); 
        }
-      /*p{ */
-      /*       font-size:1.3em;  */
-      /*       margin-top: 100%; */
-      /*      margin-left: 5%; */
-      /*       text-align:center; */
-      /*} */
-      #button4{ 
+      #button4 { 
             background-image: url(https://s3.amazonaws.com/weddingshoot/DontKnowHowIFeel3.jpg); 
-  } 
- #weather{ 
+       } 
+ #weather { 
             display: inline-block; 
             margin-top: 50px; 
             margin-right: 45px; 
@@ -103,12 +95,12 @@ ul   {
             margin-bottom: 50px; 
             width: 550px; 
             height:250; 
-           background: brown; 
-            /*opacity: 0.6; */
-           float: left; 
+            background: brown; 
+            opacity: 0.6; 
+            float: left; 
             border: 3px solid #330033; 
-  } 
-  #weather p{ 
+       } 
+  #weather p { 
      margin-top: 5%; 
      margin-left: 30%; 
      text-decoration: underline; 
@@ -116,19 +108,19 @@ ul   {
      color: #D0D0D0; 
      font-size:1.5em; 
      font-weight: bold; 
-  } 
-   #button5{ 
+      } 
+         #button5 { 
              background-image: url(https://s3.amazonaws.com/weddingshoot/Sunny.jpg);
          } 
-         #button6{ 
+         #button6 { 
              background-image: url(https://s3.amazonaws.com/weddingshoot/cloudy.jpg);
-        } 
-        #button7{ 
+         } 
+         #button7 { 
             background-image: url(https://s3.amazonaws.com/weddingshoot/Rain.jpg); 
         } 
-      #button8{ 
+         #button8 { 
             background-image: url(https://s3.amazonaws.com/weddingshoot/Thunder.jpg); 
-      } 
+        } 
 } 
-</style 
+</style> 
 
