@@ -40,7 +40,7 @@ ul   {
        height:250; 
        background: brown; 
        opacity: 0.6; 
-*/     float: left; 
+       float: left; 
        border: 3px solid #330033; 
         } 
     #moodboard p{ 
@@ -69,17 +69,16 @@ ul   {
             width: 120px; 
             height: 120px; 
         }
-
         #button1{ 
             background-image: url(https://s3.amazonaws.com/weddingshoot/Happy3.jpg); 
         } 
         
-        .emotion { 
-            font-size:12px; 
-            position: relative;
-            top: 100%; 
-            margin-left: 0%; 
-            text-align:center; 
+        /*.emotion { */
+        /*    font-size:12px; */
+        /*    position: relative;*/
+        /*    top: 100%; */
+        /*    margin-left: 0%; */
+        /*    text-align:center; */
         } 
         #button2{ 
             background-image: url(https://s3.amazonaws.com/weddingshoot/Calm2.jpg); 
