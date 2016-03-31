@@ -71,9 +71,9 @@ ul   {
             height: 120px; 
         }
         .button p {
-            position:relative;
+            position:absolute;
             font-size:1.3em;  
-            margin-top:70%;
+            margin-top:100%;
             margin-left:5%; 
             padding:10px;
         }
