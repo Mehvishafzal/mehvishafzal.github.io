@@ -17,37 +17,39 @@
     <div id="moodboard">
         <p>Pick how you feel today</p>
         <div class="button" id="button1">
-            <p class="emotion">Happy</p>
+            <p class="caption">Happy</p>
         </div>
         <div class="button" id="button2">
-            <p class="emotion">Calm</p>
+            <p class="caption">Calm</p>
         </div>
         <div class="button" id="button3">
-            <p class="emotion">Sad</p>
+            <p class="caption">Sad</p>
         </div>
         <div class="button" id="button4">
-            <p class="emotion">Not Sure</p>
+            <p class="caption">
+                
+                Dunno
+            </p>
         </div>
     </div>
     <div id="weather">
         <p>How is the Weather Today?</p>
         <div class="button" id="button5">
-            <p class="emotion">Sunny</p>
+            <p class="caption">Sunny</p>
         </div>
         <div class="button" id="button6">
-            <p class="emotion">Cloudy</p>
+            <p class="caption">Cloudy</p>
         </div>
         <div class="button" id="button7">
-            <p class="emotion">Rainy</p>
+            <p class="caption">Rainy</p>
         </div>
         <div class="button" id="button8">
-            <p class="emotion">Thunder</p>
+            <p class="caption">Thunder</p>
         </div>
     </div>
     <script>
     var page = document.getElementById('page');
     var button1 = document.getElementById("button1");
-
 
     button1.addEventListener("click", function changeBackgroundColor() {
         page.style.backgroundImage = "url(Happy3.jpg)";
@@ -58,7 +60,6 @@
 
     var button2 = document.getElementById("button2");
 
-
     button2.addEventListener("click", function changeBackgroundColor() {
         page.style.backgroundImage = "url(Calm2.jpg)";
         page.style.backgroundSize = "contain";
@@ -67,7 +68,6 @@
     });
 
     var button3 = document.getElementById("button3");
-
 
     button3.addEventListener("click", function changeBackgroundColor() {
         page.style.backgroundImage = "url(Sad4.jpg)";
@@ -78,7 +78,6 @@
 
     var button4 = document.getElementById("button4");
 
-
     button4.addEventListener("click", function changeBackgroundColor() {
         page.style.backgroundImage = "url(DontKnowHowIFeel.jpg)";
         page.style.backgroundSize = "contain";
@@ -87,7 +86,6 @@
     });
 
     var button5 = document.getElementById("button5");
-
 
     button5.addEventListener("click", function changeBackgroundColor() {
         page.style.backgroundImage = "url(Sunny.jpg)";
@@ -98,7 +96,6 @@
 
     var button6 = document.getElementById("button6");
 
-
     button6.addEventListener("click", function changeBackgroundColor() {
         page.style.backgroundImage = "url(cloudy.jpg)";
         page.style.backgroundSize = "contain";
@@ -106,8 +103,7 @@
 
     });
 
-    var button7 = document.getElementById("button3");
-
+    var button7 = document.getElementById("button7");
 
     button7.addEventListener("click", function changeBackgroundColor() {
         page.style.backgroundImage = "url(Rain.jpg)";
@@ -116,8 +112,7 @@
 
     });
 
-    var button8 = document.getElementById("button3");
-
+    var button8 = document.getElementById("button8");
 
     button8.addEventListener("click", function changeBackgroundColor() {
         page.style.backgroundImage = "url(Thunder.jpg)";

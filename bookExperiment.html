@@ -1,54 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<style>
-
-#text{
-	height:400px;
-	width:400px;
-	background-image: url("http://exchangedownloads.smarttech.com/public/content/d3/d374f5fb-538c-4004-8c22-d2153548bb06/previews/medium/0001.png");
-	font-size: 18px;
-}
-
-
-	</style>
-
+    <style>
+    #text {
+        height: 400px;
+        width: 400px;
+        background-image: url("http://exchangedownloads.smarttech.com/public/content/d3/d374f5fb-538c-4004-8c22-d2153548bb06/previews/medium/0001.png");
+        font-size: 18px;
+    }
+    </style>
 </head>
+
 <body>
-
-<textarea id ="text"></textarea>
-
-<br>
-
-<input id="sub" type=submit></input>
-
-<script type="text/javascript">
-
-	function makePage (a) {
-		// var self = this;
-			var page = document.createElement("div");
-			document.body.appendChild(page);
-			page.style.width = "400px";
-			page.style.height = "400px";
-			page.style.backgroundImage = "url(http://exchangedownloads.smarttech.com/public/content/d3/d374f5fb-538c-4004-8c22-d2153548bb06/previews/medium/0001.png)";
-			page.innerText = text.value;
-			page.style.position = "fixed";
+    <textarea id="text"></textarea>
+    <br>
+    <input id="sub" type=submit></input>
+    <script type="text/javascript">
+    function makePage(a) {
+        // var self = this;
+        var page = document.createElement("div");
+        document.body.appendChild(page);
+        page.style.width = "400px";
+        page.style.height = "400px";
+        page.style.backgroundImage = "url(http://exchangedownloads.smarttech.com/public/content/d3/d374f5fb-538c-4004-8c22-d2153548bb06/previews/medium/0001.png)";
+        page.innerText = text.value;
+        page.style.position = "fixed";
 
 
 
-	}
+    }
 
-	var sub = document.getElementById('sub');
-	sub.addEventListener("click", function () {localStorage.setItem("textStuff", text.value);
-		var fthis = makePage();
-	
-
-});
+    var sub = document.getElementById('sub');
+    sub.addEventListener("click", function() {
+        localStorage.setItem("textStuff", text.value);
+        var fthis = makePage();
 
 
-
-
-</script>
-
+    });
+    </script>
 </body>
+
 </html>
