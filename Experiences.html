@@ -5,8 +5,8 @@
 </head>
 <style>
 {
-  background-image: url("https://s3.amazonaws.com/weddingshoot/1-WALLPAPER.jpg");
-  background-size: 100%;
+    background-image: url("https://s3.amazonaws.com/weddingshoot/1-WALLPAPER.jpg");
+    background-size: 100%;
 }
 
 .content {
@@ -21,6 +21,7 @@
     opacity: 0.7;
     background-color: white;
 }
+
 .content:first-letter {
     font-size: 7em;
     line-height: 1em;
@@ -29,6 +30,7 @@
     margin: 0 0 0 -0.1em;
 }
 </style>
+
 <body>
     <h1>Experiences</h1>
     <hr />
@@ -40,9 +42,14 @@
             <li><a href="http://Assignments.html">DGMD Class Assignments</a></li>
         </ul>
     </div>
-    <h3 class="date"> 
-        <em> 01/26/2016 </em> <br>
-    <div class="content">
+    <textarea id="textbox" style="width:800px; height:400px; position:relative; left:20%; opacity:0.4;">
+    </textarea>
+    <br>
+    <button id="mysubmit" type="submit" style="position:relative; left:75%;"> Submit
+    </button>
+    <!-- <h3 class="date"> 
+        <em> 01/26/2016 </em> <br> -->
+    <!-- <div class="content">
       The very first day of the DMGD E-15 class, I came in and the class started with analyzing some of the digital media adds. 
       People in the class started commenting about what they saw and what it meant to them. 
       There were lots of perspectives about those 2-3 minute adds and I was thinking in my head, are all these people really new to this class??
@@ -62,11 +69,11 @@
       I left class that night overwhelmed. Talked to my husband all the way back home about how people think about different things 
       and how perspectives differ from person to person and culture to culture. He listened silently all along, I guess he was also 
       amazed at the idea of me being so excited about this new perspective I got that night.<br>
-    </div>
+    </div> -->
     
    
         
-    <h3 class="date"> 
+    <!-- <h3 class="date"> 
         <em> 02/04/2016 </em>
     <div class="content"></div>
       
@@ -78,10 +85,26 @@
         
     <h3 class="date"> 
         <em> 02/25/2016 </em>
-    </p>
+    </p> -->
   
-
   <script type="text/javascript">
+   
+ var textbox = document.getElementById("textbox");
+
+   var submit = document.getElementById("mysubmit");
+   submit.addEventListener("click", function(){
+    localStorage.setItem("text", textbox.value);
+    
+    var mydiv =document.createElement("div");
+    mydiv.innerText =localStorage.getItem("text")
+    document.body.appendChild(mydiv)
+    mydiv.style.backgroundColor="white";
+    mydiv.style.opacity=0.4;});
+
+  //1. add an event listener to the button so that when we click on it, the text in the textarea goes into local storage. 
+
+  // 2. Then we need to get the text from local storage and put in a div below the box.
+
 
 var page = document.getElementById("page");
 page.style.backgroundImage = "url(" + localStorage.getItem("backgroundImage") + ")";
