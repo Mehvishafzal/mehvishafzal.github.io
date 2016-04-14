@@ -38,6 +38,10 @@ background-size: 100%;
             <li><a href="http://Assignments.html">DGMD Class Assignments</a></li>
         </ul>
     </div>
+    <textarea id = "textArea" style ="width:400px; height:400px;"></textarea>
+    <br><br>
+    <input id ="submitButton" type=button value="submit!"> </input></a>
+
     <h3 class="date"> 
         <em> 01/26/2016 </em> <br>
     <div class="content">
@@ -64,7 +68,15 @@ background-size: 100%;
   
 
   <script type="text/javascript">
-var content = function(message) {
+  var textArea = document.getElementById("textArea");
+	var submitButton = document.getElementById("submitButton");
+	
+	submitButton.addEventListener("click", function () {
+		console.log("hi");
+		localStorage.setItem("postit" + Date.now(), textArea.value)
+	});
+	
+   var content = function(message) {
         var self = this;
         self.content = document.createElement("div");
         document.body.appendChild(self.content);
