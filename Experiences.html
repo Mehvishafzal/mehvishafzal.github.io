@@ -61,28 +61,47 @@ background-size: 100%;
       and how perspectives differ from person to person and culture to culture. He listened silently all along, I guess he was also 
       amazed at the idea of me being so excited about this new perspective I got that night.<br>
     </div>
-    
-   
-        
-    <h3 class="date"> 
-        <em> 02/04/2016 </em>
-    <div class="content">
-    </div>
-      
-  
-    <h3 class="date"> 
-        <em> 02/11/2016 </em>
-        
-    <h3 class="date"> 
-        <em> 02/18/2016 </em>
-        
-    <h3 class="date"> 
-        <em> 02/25/2016 </em>
-    </p>
   
 
   <script type="text/javascript">
+var content = function(message) {
+        var self = this;
+        self.content = document.createElement("div");
+        document.body.appendChild(self.content);
 
+        self.contnet.style.height = "200px";
+        self.content.style.width = "200px";
+        self.contnet.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 255) + "," +
+            Math.floor(Math.random() * 255) + "," +
+            Math.floor(Math.random() * 255) + ")";
+        self.content.style.position = "relative";
+        self.content.style.left = "0px";
+        self.content.style.top = "0px";
+        self.content.classList.add("squares");
+
+        self.content.innerText = message;
+    };
+
+    for (key in localStorage) { 
+        //for in loops inherently take all of the keyes so whatever you put in that first spot refers to all of the keys. makePostIt(message) is when you give the arguent to makenewpostit and previously you set message TO the localStorage.getItem(key) and that (key) got its value from when you did for in and it inherently means the key because for in refers to the keys in a dictionary.
+
+    	//
+
+        var content = (key.slice(0, 6) == "postit"); //need to do this because the key also has date.now to make it specific so if you just slice postit out you know that it came from the message box... and then you get the value associated with the key and in the first function you feed it into the div you make
+        //
+        if (content) {
+            var message = localStorage.getItem(key);
+            new contnet(message)
+        }
+    }
+    // for (a in b) { };
+    // make a variable called a
+    // give me the first key from b
+    // put that key in a
+    // do whatever is in the {}
+    // give me the next key from b
+    // put that key in a
+    // do whatever is in the {}
 var page = document.getElementById("page");
 page.style.backgroundImage = "url(" + localStorage.getItem("backgroundImage") + ")";
 
