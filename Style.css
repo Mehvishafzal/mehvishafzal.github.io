@@ -62,7 +62,7 @@ ul   {
             background-size: cover; 
             margin-left:25px; 
             position: relative;
-            top: 70%;
+            top: 10%;
            -webkit-transition: width 2s, height 2s;  
             transition: width 2s, height 2s; 
         }
@@ -76,6 +76,7 @@ ul   {
             margin-bottom:20%;
             margin-left:5%; 
             padding:10px;
+            top:70%;
         }
         #button1 { 
             background-image: url(https://s3.amazonaws.com/weddingshoot/Happy3.jpg); 
