@@ -42,7 +42,7 @@
             <li><a href="http://Assignments.html">DGMD Class Assignments</a></li>
         </ul>
     </div>
-<<<<<<< HEAD
+
     <textarea id="textbox" style="width:800px; height:400px; position:relative; left:20%; opacity:0.4;">
     </textarea>
     <br>
@@ -51,7 +51,8 @@
     <!-- <h3 class="date"> 
         <em> 01/26/2016 </em> <br> -->
     <!-- <div class="content">
-=======
+
+
     <textarea id = "textArea" style ="width:400px; height:400px;"></textarea>
     <br><br>
     <input id ="submitButton" type=button value="submit!"> </input></a>
@@ -59,7 +60,7 @@
     <h3 class="date"> 
         <em> 01/26/2016 </em> <br>
     <div class="content">
->>>>>>> origin/master
+
       The very first day of the DMGD E-15 class, I came in and the class started with analyzing some of the digital media adds. 
       People in the class started commenting about what they saw and what it meant to them. 
       There were lots of perspectives about those 2-3 minute adds and I was thinking in my head, are all these people really new to this class??
@@ -79,7 +80,7 @@
       I left class that night overwhelmed. Talked to my husband all the way back home about how people think about different things 
       and how perspectives differ from person to person and culture to culture. He listened silently all along, I guess he was also 
       amazed at the idea of me being so excited about this new perspective I got that night.<br>
-<<<<<<< HEAD
+
     </div> -->
     
    
@@ -97,12 +98,10 @@
     <h3 class="date"> 
         <em> 02/25/2016 </em>
     </p> -->
-=======
-    </div>
->>>>>>> origin/master
+
   
   <script type="text/javascript">
-<<<<<<< HEAD
+
    
  var textbox = document.getElementById("textbox");
 
@@ -121,7 +120,7 @@
   // 2. Then we need to get the text from local storage and put in a div below the box.
 
   // new chnages
-=======
+
   var textArea = document.getElementById("textArea");
 	var submitButton = document.getElementById("submitButton");
 	
@@ -130,29 +129,29 @@
 		localStorage.setItem("postit" + Date.now(), textArea.value)
 	});
 	
-   var content = function(message) {
-        var self = this;
-        self.content = document.createElement("div");
-        document.body.appendChild(self.content);
+   // var content = function(message) {
+   //      var self = this;
+   //      self.content = document.createElement("div");
+   //      document.body.appendChild(self.content);
 
-        self.contnet.style.height = "200px";
-        self.content.style.width = "200px";
-        self.contnet.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 255) + "," +
-            Math.floor(Math.random() * 255) + "," +
-            Math.floor(Math.random() * 255) + ")";
-        self.content.style.position = "relative";
-        self.content.style.left = "0px";
-        self.content.style.top = "0px";
-        self.content.classList.add("squares");
+   //      self.contnet.style.height = "200px";
+   //      self.content.style.width = "200px";
+   //      self.contnet.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 255) + "," +
+   //          Math.floor(Math.random() * 255) + "," +
+   //          Math.floor(Math.random() * 255) + ")";
+   //      self.content.style.position = "relative";
+   //      self.content.style.left = "0px";
+   //      self.content.style.top = "0px";
+   //      self.content.classList.add("squares");
 
-        self.content.innerText = message;
-    };
+   //      self.content.innerText = message;
+   //  };
 
-    for (key in localStorage) { 
+   //  for (key in localStorage) { 
         //for in loops inherently take all of the keyes so whatever you put in that first spot refers to all of the keys. makePostIt(message) is when you give the arguent to makenewpostit and previously you set message TO the localStorage.getItem(key) and that (key) got its value from when you did for in and it inherently means the key because for in refers to the keys in a dictionary.
 
     	//
->>>>>>> origin/master
+
 
         var content = (key.slice(0, 6) == "postit"); //need to do this because the key also has date.now to make it specific so if you just slice postit out you know that it came from the message box... and then you get the value associated with the key and in the first function you feed it into the div you make
         //
