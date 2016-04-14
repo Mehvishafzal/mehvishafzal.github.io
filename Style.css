@@ -62,7 +62,7 @@ ul   {
             background-size: cover; 
             margin-left:25px; 
             position: relative;
-            top: 10%;
+            top: 70%;
            -webkit-transition: width 2s, height 2s;  
             transition: width 2s, height 2s; 
         }
