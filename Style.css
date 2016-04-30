@@ -3,7 +3,7 @@ html {
     background-image: url("https://s3.amazonaws.com/weddingshoot/6-WALLPAPER.jpg");
     background-size: 100%;
 }
-=======
+
 html { 
        background-image: url("https://s3.amazonaws.com/weddingshoot/6-WALLPAPER.jpg"); 
        background-size: 100%; 
@@ -131,9 +131,30 @@ ul   {
          #button8 { 
             background-image: url(https://s3.amazonaws.com/weddingshoot/Thunder.jpg); 
         } 
-} 
+/*#Avatar{ 
+       display: inline-block; 
+       margin-top: 50px; 
+       margin-right: 45px; 
+       margin-left: 100px; 
+       margin-bottom: 50px; 
+       width: 550px; 
+       height:250; 
+       background: brown; 
+       opacity: 0.6; 
+       float: left; 
+       border: 3px solid #330033; 
+        } 
+    #Avatar p{ 
+        margin-top: 5%; 
+        margin-left: 30%; 
+        text-decoration: underline; 
+        text-transform: capitalize; 
+        color: #D0D0D0; 
+        font-size:1.5em; 
+        font-weight: bold; 
+      }*/
 </style> 
->>>>>>> origin/master
+
 
 h1 {
     background-color: brown;

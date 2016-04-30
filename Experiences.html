@@ -5,30 +5,21 @@
 </head>
 <style>
 {
-  background-image: url("https://s3.amazonaws.com/weddingshoot/1-WALLPAPER.jpg");
-  background-size: 100%;
+    background-image: url("https://s3.amazonaws.com/weddingshoot/1-WALLPAPER.jpg");
+    background-size: 100%;
 }
 
 .content {
-    /*position: relative;
-    font-size: 14px;
-    color: #D0D0D0;
-    display: inline-block;
-    width: 800px;
-    line-height: 1.25em;
-    margin: right;
-    left: 20%;*/
     opacity: 0.7;
     background-color: white;
 }
+
 .content:first-letter {
     font-size: 7em;
     line-height: 1em;
-    /*font-weight: 400;
-    float: Left;
-    margin: 0 0 0 -0.1em;*/
 }
 </style>
+
 <body>
     <h1>Experiences</h1>
     <hr />
@@ -40,73 +31,73 @@
             <li><a href="http://Assignments.html">DGMD Class Assignments</a></li>
         </ul>
     </div>
-
-    <textarea id="textbox" style="width:800px; height:400px; position:relative; left:20%; opacity:0.4;">
+    <textarea id="textArea" style="width:800px; height:400px; position:relative; left:20%; opacity:0.4;">
     </textarea>
     <br>
-    <button id="mysubmit" type="submit" style="position:relative; left:75%;"> Submit
+    <button id="submit" type="submit" style="position:relative; left:75%;"> Submit
     </button>
-    <!-- <h3 class="date"> 
-        <em> 01/26/2016 </em> <br> -->
-    <!-- <div class="content">
-
-
-    <textarea id = "textArea" style ="width:400px; height:400px;"></textarea>
-    <br><br>
-    <input id ="submitButton" type=button value="submit!"> </input></a>
-
-    <h3 class="date"> 
-        <em> 01/26/2016 </em> <br>
-    <div class="content">
-
-=======
-    <h3 class="date"> 
-        <em> 01/26/2016 </em> <br>
-    <div class="content">
->>>>>>> parent of 50c3ab1... save the page
-      The very first day of the DMGD E-15 class, I came in and the class started with analyzing some of the digital media adds. 
-      People in the class started commenting about what they saw and what it meant to them. 
-      There were lots of perspectives about those 2-3 minute adds and I was thinking in my head, are all these people really new to this class??
-      Seems like they really know what to say..<br>
-      Being a first timer, to anything makes people fearful generally but I didn’t sense anything like that amongst the group.
-      Most people were really confident in saying what they observed and the instructors echoed with their observations. 
-      Something inside me thought these people are really good at “JUDGING”. <br>
-      For me when I look at something, mostly it’s with half my attention sidetracked somewhere else and the other half is just enough 
-      to know that something new came into the market and people within the add looked nicer OR NOT (Presence wise).<br>  
-      Hearing a bunch of different perspectives made me feel there is more to these adds than just vending products.
-      You must be thinking why am even taking this course if I have no interest in what message is being communicated 
-      through these expressive means. Well, I design stuff for living and that’s been my focus all along UNTILL I got myself in to
-      DGMD E 15. When I was registering this course I thought it would equip me with different techniques to enhance what I love to
-      do but the story changed upside down well a little sideways if not upside down.<br>
-      Then we were given a person card assignment to work on. We were to look at already written code and come up with a card for your
-      partner (person sitting next to you). I got Susan Cantrell as my partner. <br>
-      I left class that night overwhelmed. Talked to my husband all the way back home about how people think about different things 
-      and how perspectives differ from person to person and culture to culture. He listened silently all along, I guess he was also 
-      amazed at the idea of me being so excited about this new perspective I got that night.<br>
-<<<<<<< HEAD
-
-    </div> -->
-    </div>
-
-  
-  <script type="text/javascript">
-
    
- var textbox = document.getElementById("textbox");
-
-   var submit = document.getElementById("mysubmit");
-   submit.addEventListener("click", function(){
-    localStorage.setItem("text", textbox.value);
+    <script type="text/javascript">
     
-    var mydiv =document.createElement("div");
-    mydiv.innerText =localStorage.getItem("text")
-    document.body.appendChild(mydiv)
-    mydiv.style.backgroundColor="white";
-    mydiv.style.opacity=0.4;});
+   var ul = document.createElement("ul");
+    document.body.appendChild(ul);
 
-var page = document.getElementById("page");
-page.style.backgroundImage = "url(" + localStorage.getItem("backgroundImage") + ")";
+    var submit = document.getElementById("submit");
+    var textArea = document.getElementById("textArea");
 
-  </script>
-   </body>
-  </html>
+    
+
+    submit.addEventListener("click", function() {
+        var li = document.createElement('li');
+        var note = Date.now() + ' ' + textArea.value
+        li.innerText = note;
+        if (localStorage.getItem('experiences')) {
+            // get the list
+            var myListString = localStorage.getItem('experiences');
+            var myList = JSON.parse(myListString);
+
+            // update the list
+            myList.push(note);
+
+            // put the list back
+            var myNewListString = JSON.stringify(myList);
+            localStorage.setItem('experiences', myNewListString);
+        } else {
+            var myFirstList = [note];
+            var myFirstListString = JSON.stringify(myFirstList);
+            localStorage.setItem('experiences', myFirstListString)
+        }
+
+        ul.appendChild(li);
+
+        // localStorage.setItem("entry", textArea.value)
+    });
+
+    var myExperiencesString = localStorage.
+    getItem('experiences');
+    var myExperiences = JSON.parse(myExperiencesString);
+
+    var addExperienceToPage = function(noteText) {
+        var li = document.createElement('li');
+        li.innerText = noteText;
+        ul.appendChild(li);
+    };
+
+    myExperiences.forEach(addExperienceToPage);
+
+    
+
+
+    // var mydiv = document.createElement("div");
+    // mydiv.innerText = localStorage.getItem("text")
+    // document.body.appendChild(mydiv)
+    // mydiv.style.backgroundColor = "white";
+    // mydiv.style.opacity = 0.4;
+    // });
+
+    var page = document.getElementById("page");
+    page.style.backgroundImage = "url(" + localStorage.getItem("backgroundImage") + ")";
+    </script>
+</body>
+
+</html>
