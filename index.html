@@ -1,4 +1,4 @@
-<html id="page">
+<html id="A">
 
 <head>
     <link rel="stylesheet" href="Style.css" type="text/css">
@@ -32,7 +32,6 @@
             </p>
         </div>
 
-        <!-- saving -->
     </div>
     <div id="weather">
         <p>How is the Weather Today?</p>
@@ -58,8 +57,13 @@
             <p class="caption">Avatar</p> -->
 
     <script>
+    localStorage.removeItem('backgroundImage');
+
     var page = document.getElementById('page');
     var button1 = document.getElementById("button1");
+
+
+
 
     button1.addEventListener("click", function changeBackgroundColor() {
         page.style.backgroundImage = "url(Happy2.png)";

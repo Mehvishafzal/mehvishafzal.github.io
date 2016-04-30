@@ -1,14 +1,9 @@
-<html id="page">
+<html id ="page">
 
 <head>
     <link rel="stylesheet" href="Style.css" type="text/css">
 </head>
 <style>
-{
-    background-image: url("https://s3.amazonaws.com/weddingshoot/1-WALLPAPER.jpg");
-    background-size: 100%;
-}
-
 .content {
     opacity: 0.7;
     background-color: white;
@@ -31,25 +26,48 @@
             <li><a href="http://Assignments.html">DGMD Class Assignments</a></li>
         </ul>
     </div>
-    <textarea id="textArea" style="width:800px; height:400px; position:relative; left:20%; opacity:0.4;">
+    <textarea id="textArea" style="width:800px; height:400px; position:relative; top:20px; left:20%; opacity:0.4;">
     </textarea>
     <br>
-    <button id="submit" type="submit" style="position:relative; left:75%;"> Submit
+    <button id="submit" type="submit" style="position:relative; top:20px; left:75%;"> Submit
     </button>
-   
     <script type="text/javascript">
-    
-   var ul = document.createElement("ul");
-    document.body.appendChild(ul);
+    // if the backgroundImage is set in localStorage
+    if (localStorage.hasOwnProperty('backgroundImage')) {
+        // set the background of the page to 
+        var page = document.getElementById("page");
+
+        page.style.backgroundImage = "url(" + localStorage.getItem("backgroundImage") + ")";
+    }
+
+    var ul = document.createElement("ul");
+    var textDiv = document.createElement("div");
+    document.body.appendChild(textDiv);
+    textDiv.appendChild(ul);
+    textDiv.style.width = "800px";
+    textDiv.style.position = "relative";
+    textDiv.style.top = "70px";
+    textDiv.style.left = "20%";
+    textDiv.style.backgroundColor = "white";
+    textDiv.style.opacity ="0.5"
+
+
 
     var submit = document.getElementById("submit");
     var textArea = document.getElementById("textArea");
 
-    
+
 
     submit.addEventListener("click", function() {
         var li = document.createElement('li');
-        var note = Date.now() + ' ' + textArea.value
+
+        var date = new Date (Date.now());
+    var options = {month: "long", weekday:"long", year: "numeric", day: "numeric", };
+    var wantedDate = date.toLocaleDateString('en-US', options);
+
+
+        var note = wantedDate + ' ' + textArea.value;
+
         li.innerText = note;
         if (localStorage.getItem('experiences')) {
             // get the list
@@ -70,7 +88,6 @@
 
         ul.appendChild(li);
 
-        // localStorage.setItem("entry", textArea.value)
     });
 
     var myExperiencesString = localStorage.
@@ -84,19 +101,7 @@
     };
 
     myExperiences.forEach(addExperienceToPage);
-
-    
-
-
-    // var mydiv = document.createElement("div");
-    // mydiv.innerText = localStorage.getItem("text")
-    // document.body.appendChild(mydiv)
-    // mydiv.style.backgroundColor = "white";
-    // mydiv.style.opacity = 0.4;
-    // });
-
-    var page = document.getElementById("page");
-    page.style.backgroundImage = "url(" + localStorage.getItem("backgroundImage") + ")";
+    wallpaper //
     </script>
 </body>
 
