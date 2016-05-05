@@ -27,11 +27,9 @@
         </div>
         <div class="button" id="button4">
             <p class="caption">
-                
                 Dunno
             </p>
         </div>
-
     </div>
     <div id="weather">
         <p>How is the Weather Today?</p>
@@ -48,27 +46,17 @@
             <p class="caption">Thunder</p>
         </div>
     </div>
-
-    <!-- <div id="Avatar">
-        <div class="button" id="button6">
-            <p class="caption">Avatar</p>
-    </div>
-    <div class="button" id="button6">
-            <p class="caption">Avatar</p> -->
-
+   
     <script>
     localStorage.removeItem('backgroundImage');
 
     var page = document.getElementById('page');
     var button1 = document.getElementById("button1");
 
-
-
-
     button1.addEventListener("click", function changeBackgroundColor() {
-        page.style.backgroundImage = "url(Happy2.png)";
+        page.style.backgroundImage = "url(HappyImage.jpg)";
         page.style.backgroundSize = "contain";
-        localStorage.setItem("backgroundImage", "Happy2.png");
+        localStorage.setItem("backgroundImage", "HappyImage.jpg");
 
     });
 
@@ -93,18 +81,18 @@
     var button4 = document.getElementById("button4");
 
     button4.addEventListener("click", function changeBackgroundColor() {
-        page.style.backgroundImage = "url(DontKnowHowIFeel.jpg)";
+        page.style.backgroundImage = "url(DKHIF.jpg)";
         page.style.backgroundSize = "contain";
-        localStorage.setItem("backgroundImage", "DontKnowHowIFeel.jpg");
+        localStorage.setItem("backgroundImage", "DKHIF.jpg");
 
     });
 
     var button5 = document.getElementById("button5");
 
     button5.addEventListener("click", function changeBackgroundColor() {
-        page.style.backgroundImage = "url(Sunny.jpg)";
+        page.style.backgroundImage = "url(BSD.jpg)";
         page.style.backgroundSize = "contain";
-        localStorage.setItem("backgroundImage", "Sunny.jpg");
+        localStorage.setItem("backgroundImage", "BSD.jpg");
 
     });
 

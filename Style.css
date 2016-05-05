@@ -40,17 +40,6 @@ ul {
     color: #D0D0D0;
 }
 
-
-#moodboard p {
-    margin-top: 5%;
-    margin-left: 30%;
-    text-decoration: underline;
-    text-transform: capitalize;
-    color: #D0D0D0;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
 .button {
     position: absolute;
     display: inline-block;
@@ -81,7 +70,7 @@ ul {
 }
 
 #button1 {
-    background-image: url(https://s3.amazonaws.com/weddingshoot/Happy3.jpg);
+    background-image: url(https://s3.amazonaws.com/weddingshoot/HappyImage.jpg);
 }
 
 #button2 {
@@ -93,7 +82,7 @@ ul {
 }
 
 #button4 {
-    background-image: url(https://s3.amazonaws.com/weddingshoot/DontKnowHowIFeel3.jpg);
+    background-image: url(https://s3.amazonaws.com/weddingshoot/Dont+Know+How+I+Feel.jpg);
 }
 
 #weather {
@@ -130,8 +119,17 @@ ul {
     font-weight: bold;
 }
 
+#moodboard p {
+    margin-top: 5%;
+    margin-left: 30%;
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: #D0D0D0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
 #button5 {
-    background-image: url(https://s3.amazonaws.com/weddingshoot/Sunny.jpg);
+    background-image: url(https://s3.amazonaws.com/weddingshoot/Bright+Sunny+Day.JPG);
 }
 
 #button6 {
@@ -145,30 +143,6 @@ ul {
 #button8 {
     background-image: url(https://s3.amazonaws.com/weddingshoot/Thunder.jpg);
 }
-
-
-/*#Avatar{ 
-       display: inline-block; 
-       margin-top: 50px; 
-       margin-right: 45px; 
-       margin-left: 100px; 
-       margin-bottom: 50px; 
-       width: 550px; 
-       height:250; 
-       background: brown; 
-       opacity: 0.6; 
-       float: left; 
-       border: 3px solid #330033; 
-        } 
-    #Avatar p{ 
-        margin-top: 5%; 
-        margin-left: 30%; 
-        text-decoration: underline; 
-        text-transform: capitalize; 
-        color: #D0D0D0; 
-        font-size:1.5em; 
-        font-weight: bold; 
-      }*/
 
 </style> h1 {
     background-color: brown;
@@ -253,7 +227,7 @@ ul {
     left: -10%;
 }
 
-#button1 {
+/*#button1 {
     background-image: url(https://s3.amazonaws.com/weddingshoot/Happy3.jpg);
 }
 
@@ -307,6 +281,6 @@ ul {
 
 #button8 {
     background-image: url(https://s3.amazonaws.com/weddingshoot/Thunder.jpg);
-}
+}*/
 
 </style>
