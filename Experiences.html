@@ -21,9 +21,9 @@
     <div id="nav">
         <div class="sidebar"></div>
         <ul id="firstlist">
-            <li><a href="https://index.html">Home</a></li>
-            <li><a href="http://Experiences.html">Experiences</a></li>
-            <li><a href="http://Assignments.html">DGMD Class Assignments</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Experiences.html">Experiences</a></li>
+            <li><a href="Assignments.html">DGMD Class Assignments</a></li>
         </ul>
     </div>
     <textarea id="textArea" style="width:800px; height:400px; position:relative; top:20px; left:20%; opacity:0.4;">
@@ -35,9 +35,9 @@
     // if the backgroundImage is set in localStorage
     if (localStorage.hasOwnProperty('backgroundImage')) {
         // set the background of the page to 
-        var page = document.getElementById("page");
+        var A = document.getElementById("A");
 
-        page.style.backgroundImage = "url(" + localStorage.getItem("backgroundImage") + ")";
+        A.style.backgroundImage = "url(" + localStorage.getItem("backgroundImage") + ")";
     }
 
     var ul = document.createElement("ul");
