@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<textarea id = "textArea" style ="width:400px; height:400px;"></textarea>
+
+<br><br>
+<a href="Savetext1.html"><input id ="submitButton" type=button value="submit!"> </input></a>
+
+<script type="text/javascript">
+	
+	var textArea = document.getElementById("textArea");
+	var submitButton = document.getElementById("submitButton");
+	
+	submitButton.addEventListener("click", function () {
+		console.log("hi");
+		localStorage.setItem("postit" + Date.now(), textArea.value)
+	});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <textarea id="textArea" style="width:400px; height:400px;"></textarea>
+    <button id="submit" type=submit>submit </button>
+    <script type="text/javascript">
+    var ul = document.createElement("ul");
+    document.body.appendChild(ul);
+
+    var myExperiencesString = localStorage.getItem('experiences');
+    var myExperiences = JSON.parse(myExperiencesString);
+
+    var addExperienceToPage = function(noteText) {
+        var li = document.createElement('li');
+        li.innerText = noteText;
+        ul.appendChild(li);
+    };
+
+    myExperiences.forEach(addExperienceToPage)
+
+    var submit = document.getElementById("submit");
+    var textArea = document.getElementById("textArea");
+
+    submit.addEventListener("click", function() {
+        console.log("hi");
+        var li = document.createElement('li');
+        var note = Date.now() + ' ' + textArea.value
+        li.innerText = note;
+        if (localStorage.getItem('experiences')) {
+            // get the list
+            var myListString = localStorage.getItem('experiences');
+            var myList = JSON.parse(myListString);
+
+            // update the list
+            myList.push(note);
+
+            // put the list back
+            var myNewListString = JSON.stringify(myList);
+            localStorage.setItem('experiences', myNewListString);
+        } else {
+            var myFirstList = [note];
+            var myFirstListString = JSON.stringify(myFirstList);
+            localStorage.setItem('experiences', myFirstListString)
+        }
+
+        ul.appendChild(li);
+
+        // localStorage.setItem("entry", textArea.value)
+    });
+
+    // li.value = localStorage.getItem("entry");
+
+
+    // mehvish.push(li.innerText);
+    // mehvish.forEach(function(){})
+    </script>
+</body>
+
+</html>

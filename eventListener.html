@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <!-- <div id="box" style="background-color:blue; width:100px; height:100px"></div>
+ -->
+    <script type="text/javascript">
+   
+    function makeBox()  {
+
+        var box = document.createElement("div");
+        document.body.appendChild(box);
+        box.style.backgroundColor = "red";
+            box.style.width = "100px";
+        box.style.height = "100px";
+        box.style.margin="10px";
+        // box.id = "box" + n;  
+    };
+
+        //  box.addEventListener("mouseover", function(a) {
+        // console.log("the mouse's x is " + a.pageX, "the mouse's y is " + a.pageY)});
+
+  
+
+
+    // document.querySelector("#box");
+   
+
+    for (var i = 0; i < 50; i = i+1) {makeBox()};
+
+    </script>
+  }
+</body>
+
+</html>
