@@ -6,7 +6,7 @@
 <style>
 #bigdiv {
     width: 800px;
-    height: 1350px;
+    height: 1550px;
     position: relative;
     top: 20px;
     left: 20%;
@@ -45,28 +45,39 @@ img {
         <em> 02/04/2016 </em>
    </h3> During this class we talked about person card effects and saw some examples. We also talked about pomes project and got set up to look at the project of our own to see how its built. Attached below is the link to <strong> Susan`s Card </strong>. I have created the Avatar image with bitstrips and created the fade effect.
             <br /> <a href="http://codepen.io/Mehvishafzal/pen/adPjeP" title="Click here to see Susan`s person Card">Susan`s Card</a>
-            <br>
-            <h3 class="date"> 
+            <iframe height='266' scrolling='no' src='http://codepen.io/Mehvishafzal/embed/adPjeP/?height=266&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/Mehvishafzal/pen/adPjeP/'>[DGMD E-15] people page card</a> by MehvishAfzal (<a href='http://codepen.io/Mehvishafzal'>@Mehvishafzal</a>) on <a href='http://codepen.io'>CodePen</a>.</iframe>
+                <br>
+                <h3 class="date"> 
         <em> 02/25/2016 </em>
         </h3> The class assignment to submit for this class is to submit a paper mockup for the project you would like to do. I plan to work on my journal as a class project and worked with Molly to create small pieces of the project and bring them together after. We careted this 4 loop as i wanted to create two divs on my index.html page and with in the dive make 8 smilar boxes. Mollu helped me undersatnd that there are various ways to do it, within html and css but i want to learn something new he can try it in javascript. so we craeted this.
-            <br />
-            <a href="eventListener.html">
-                <img style="width:200px; height:250px;" src="4loop.png">
-            </a>
-            <br />
-        <h3 class="date"> 
+                <br>
+                <a href="eventListener.html">
+                    <img style="width:200px; height:250px;" src="4loop.png">
+                </a>
+                <br />
+                <h3 class="date"> 
         <em> 03/15/2016 </em>
         </h3> I ended up creating the boxes with in html coz that was easier and work on styling the images and the backgrounds for each page.The next step was to work on the experiences page, where i wanted to create a box to put text it and then save that text below. For that we worked on the submit button and the local storage thing. We created this raw piece first to undersatnd how it works and then embeded it to the experiences page.
-            <br />
-            <a href="mehvishArraySorage.html">
-                <img style="width:200px; height:250px;" src="LocalStorageSubmit.png"></a>
                 <br />
-        <h3 class="date"> 
+                <a href="mehvishArraySorage.html">
+                    <img style="width:200px; height:250px;" src="LocalStorageSubmit.png"></a>
+                <br />
+                <h3 class="date"> 
         <em> 04/28/2016 </em>
         </h3> I worked with Alec and Molly to do the other wiring of the project such as how we can keep the image presist through the pages once it selected. We also tried to have the current date with each entry to the journal.
-            <br />
+                <br />
     </div>
     </p>
+    <script type="text/javascript">
+    // if the backgroundImage is set in localStorage
+    if (localStorage.hasOwnProperty('backgroundImage')) {
+        // set the background of the page to 
+        var B = document.getElementById("B");
+
+        B.style.backgroundImage = "url(" + localStorage.getItem("backgroundImage") + ")";
+    }
+
+    </script>
 </body>
 
 </html>
